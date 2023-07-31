@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity: Risk Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <header>
+                <img src="Passport_photo.jpg" alt="Logo">
+                <h1>Risk Calculator : Cybersecurity</h1>
+            </header>
+
+            <div class="input-group">
+                <label for="asset-value">Asset Value:</label>
+                <input type="number" id="asset-value">
+            </div>
+    
+            <div class="input-group">
+                <label for="threat-agent">Threat Agent (0-10):</label>
+                <input type="number" id="threat-agent" min="0" max="10">
+            </div>
+    
+            <div class="input-group">
+                <label for="vulnerability">Vulnerability Level (0-10):</label>
+                <input type="number" id="vulnerability" min="0" max="10">
+            </div>
+    
+            <div class="input-group">
+                <label for="technical-factors">Technical Factors (0-10):</label>
+                <input type="number" id="technical-factors" min="0" max="10">
+            </div>
+    
+            <div class="input-group">
+                <label for="business-aspect">Business Aspect (0-10):</label>
+                <input type="number" id="business-aspect" min="0" max="10">
+            </div>
+    
+            <button id="calculate-btn">Calculate Risk</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
